@@ -6,6 +6,10 @@
   float: right;
   clear: right;
   padding-top: 20px; }
+  @media (max-width: 991px) {
+    #header .shopping_cart { 
+    padding-top: 5px;
+    margin-bottom: 10px; } }
   @media (max-width: 767px) {
     #header .shopping_cart {
       padding-top: 0px; } }
@@ -173,6 +177,9 @@
   border: 1px solid #e5e4e4;
   padding: 10px;
   width: 270px; }
+  @media (max-width: 991px) {
+    #header .cart_block {
+      top: 50px; } }
   @media (max-width: 767px) {
     #header .cart_block {
       top: 40px; } }
