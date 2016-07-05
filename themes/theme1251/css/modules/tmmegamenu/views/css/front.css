@@ -9,7 +9,9 @@
   display: none; }
   @media (max-width: 767px) {
     .top_menu {
-      display: block; } }
+      display: block;
+      padding: 15px 0 0;
+      position: relative; } }
 
 .stickUpTop {
   position: relative;
@@ -28,24 +30,22 @@
 .top_menu > ul, .top_menu .stickUpHolder > ul {
   padding: 0; }
   .top_menu > ul > li, .top_menu .stickUpHolder > ul > li {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
     float: left; }
   @media (max-width: 767px) {
     .top_menu > ul > li, .top_menu .stickUpHolder > ul > li {
       float: none; }
   }
     .top_menu > ul > li > a, .top_menu .stickUpHolder > ul > li > a {
-      font: normal 16px/22px "Roboto", sans-serif;
-      color: #fff;
       display: block;
-      padding: 17px 20px;
+      padding: 5px 0;
       position: relative;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 0.5px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-    .top_menu > ul > li:hover > a, .top_menu > ul > li.sfHover > a, .top_menu > ul > li.sfHoverForce > a, .top_menu > ul > li > a:hover, .top_menu .stickUpHolder > ul > li:hover > a, .top_menu .stickUpHolder > ul > li.sfHover > a, .top_menu .stickUpHolder > ul > li.sfHoverForce > a, .top_menu .stickUpHolder > ul > li > a:hover {
-      background: #00bdef; }
     @media only screen and (min-width: 768px) {
       .top_menu > ul > li ul.is-simplemenu, .top_menu > ul > li ul.is-simplemenu ul, .top_menu .stickUpHolder > ul > li ul.is-simplemenu, .top_menu .stickUpHolder > ul > li ul.is-simplemenu ul {
         display: none;
@@ -70,10 +70,11 @@
         position: relative; }
         .top_menu > ul > li > a, .top_menu .stickUpHolder > ul > li > a {
           border-right: none;
-          text-transform: uppercase; } }
+          text-transform: uppercase;
+          color: #666; } }
 .top_menu ul.menu, .top_menu .stickUpHolder ul.menu {
   position: relative;
-  background: #00ade5;
+  background: #fff;
   margin-bottom: 0; }
   @media only screen and (max-width: 767px) {
     .top_menu ul.menu, .top_menu .stickUpHolder ul.menu {
@@ -101,6 +102,14 @@
   border: none;
   position: relative;
   vertical-align: 3px; }
+@media only screen and (max-width: 767px) {
+  .top_menu ul.menu {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    border: 1px solid #d9d9d9;
+    padding: 10px 15px; } }
 @media (min-width: 480px) and (max-width: 767px) {
   .top_menu .magamenu1 .is-megamenu .megamenu-col, .top_menu .stickUpHolder .magamenu1 .is-megamenu .megamenu-col {
     float: left;
@@ -183,19 +192,18 @@
         color: #00ade5; }
 .top_menu .menu-title, .top_menu .stickUpHolder .menu-title {
   position: relative;
-  background: #00ade5;
   color: #fff;
-  border-color: #00ade5;
-  padding: 18px 10px 18px 20px;
-  font: 500 20px/22px "Roboto", sans-serif; }
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px; }
   .top_menu .menu-title:hover, .top_menu .stickUpHolder .menu-title:hover {
     background: #00bdef;
     color: white; }
   .top_menu .menu-title:before, .top_menu .stickUpHolder .menu-title:before {
     color: #fff;
     font-family: "material-design";
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 20px;
     margin-right: 10px;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -208,10 +216,8 @@
     position: absolute;
     content: "\f067";
     font-family: "FontAwesome";
-    height: 30px;
-    width: 30px;
-    font-size: 26px;
-    top: 20px;
+    font-size: 16px;
+    top: 2px;
     right: 6px;
     cursor: pointer;
     z-index: 1; }
@@ -226,11 +232,13 @@
   font-family: "FontAwesome";
   height: 30px;
   width: 30px;
-  font-size: 26px;
-  top: 20px;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;;
+  top: 0;
   right: 6px;
   cursor: pointer;
-  color: #fff;
+  color: #262626;
   z-index: 1; }
   @media only screen and (min-width: 768px) {
     .top_menu .menu-mobile-grover:before, .top_menu .stickUpHolder .menu-mobile-grover:before {
@@ -245,7 +253,7 @@
   .top_menu .is-simplemenu li a, .top_menu .stickUpHolder .is-simplemenu li a {
     display: block;
     font-size: 14px;
-    padding: 8px 10px; }
+    padding: 5px 10px; }
   .top_menu .is-simplemenu li li a, .top_menu .stickUpHolder .is-simplemenu li li a {
     padding-left: 20px; }
   .top_menu .is-simplemenu li li li a, .top_menu .stickUpHolder .is-simplemenu li li li a {
