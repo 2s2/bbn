@@ -1,0 +1,69 @@
+/* block top links */
+ul#header_links {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    ul#header_links {
+      float: none; } }
+  ul#header_links li {
+    display: inline-block;
+    padding: 5px; }
+    @media (max-width: 991px) {
+      ul#header_links li {
+        margin-right: 3px; } }
+    @media (max-width: 767px) {
+      ul#header_links li {
+        float: none;
+        margin: 0 0 10px; } }
+    ul#header_links li a {
+      font-weight: 300; }
+      ul#header_links li a:before {
+        font-family: "material-design";
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 3px;
+        font-weight: normal; }
+        @media (max-width: 991px) {
+          ul#header_links li a:before {
+            display: none; } }
+      ul#header_links li a:hover, ul#header_links li a.active {
+        color: #262626; }
+    ul#header_links li#header_link_home a:before {
+      content: "\e0ba"; }
+    ul#header_links li#header_link_blog a:before {
+      content: "\e0a4"; }
+    ul#header_links li#header_link_contact a:before {
+      content: "\e0f4"; }
+    ul#header_links li#header_link_sitemap a:before {
+      content: "\e0de "; }
+    ul#header_links li#header_link_wishlist a:before {
+      content: "\e080"; }
+    ul#header_links li#header_link_about a:before {
+      content: "\e19c"; }
+    ul#header_links li#header_link_delivery a:before {
+      content: "\e08a "; }
+    ul#header_links li#header_link_payment a:before {
+      content: "\e061"; }
+    ul#header_links li#header_link_warranty a:before {
+      content: "\e048"; }
+
+/*block permanent links right and left columns*/
+#permanent_links div {
+  border-bottom: 1px dotted #eee; }
+
+#permanent_links div a {
+  display: block;
+  padding: 7px 11px 5px 22px;
+  color: #333;
+  background: url(img/arrow_right_2.png) no-repeat 10px 10px; }
+
+/* block footer links */
+ul#footer_links {
+  clear: both;
+  text-align: center;
+  padding-bottom: 6px; }
+
+ul#footer_links li {
+  display: inline;
+  padding: 0 10px; }
