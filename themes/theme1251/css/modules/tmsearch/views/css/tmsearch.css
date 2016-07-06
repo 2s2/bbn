@@ -12,6 +12,11 @@
     #tmsearch {
       clear: right;
       margin-right: 0; } }
+  @media (max-width: 479px) {
+    #tmsearch {
+      float: none;
+      clear: both;
+      padding-top: 15px; } }
   #tmsearch #tmsearchbox {
     overflow: hidden;
     position: relative; }
@@ -28,7 +33,9 @@
     color: #fff;}
     @media (max-width: 479px) {
       #tmsearch .btn.button-search {
-        width: 50px; } }
+        width: 50px;
+        position: absolute;
+        right: 0; } }
     #tmsearch .btn.button-search span {
       display: none; }
     #tmsearch .btn.button-search:before {
@@ -62,7 +69,7 @@
         width: 200px; } }
     @media (max-width: 479px) {
       #tmsearch #tm_search_query {
-        width: 235px; } }
+        width: 100%; } }
 
 body .ac_results {
   background: white;
