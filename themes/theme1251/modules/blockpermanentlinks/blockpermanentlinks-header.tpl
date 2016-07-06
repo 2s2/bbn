@@ -13,10 +13,4 @@
     <li id="header_link_blog">
   	<a {if $page_name =='blog'}class="active"{/if} href="{$link->getPageLink('smartblog')|escape:'html'}" title="{l s='blog' mod='blockpermanentlinks'}">{l s='blog' mod='blockpermanentlinks'}</a>
     </li>
-    
-     <li id="header_link_wishlist">
-  	<a {if $page_name =='blog'}class="active"{/if} href="{$link->getModuleLink('blockwishlist', 'mywishlist', array(), true)|escape:'html':'UTF-8'}" title="{l s='my wishlist' mod='blockpermanentlinks'}">{l s='my wishlist' mod='blockpermanentlinks'}</a>
-    </li>
-  
-    
 </ul></div></div>

@@ -15,7 +15,11 @@ ul#header_links {
     @media (max-width: 767px) {
       ul#header_links li {
         float: none;
-        margin: 0 0 10px; } }
+        margin: 0 0 10px;
+        padding: 0;
+        display: block; }
+      ul#header_links li:last-child {
+        margin-bottom: 0; } }
     ul#header_links li a {
       font-weight: 300; }
       ul#header_links li a:before {

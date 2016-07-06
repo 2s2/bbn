@@ -197,9 +197,6 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px; }
-  .top_menu .menu-title:hover, .top_menu .stickUpHolder .menu-title:hover {
-    background: #00bdef;
-    color: white; }
   .top_menu .menu-title:before, .top_menu .stickUpHolder .menu-title:before {
     color: #fff;
     font-family: "material-design";

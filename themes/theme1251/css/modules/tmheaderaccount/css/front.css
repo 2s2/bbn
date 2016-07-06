@@ -4,8 +4,7 @@
   padding: 5px; }
   @media (max-width: 767px) {
     #header-login {
-      float: none;
-      margin-left: 15px; } }
+      float: left; } }
   #header-login .current header_user_info {
     display: inline-block;
     padding: 5px;
@@ -22,6 +21,9 @@
     @media (max-width: 991px) {
       #header-login .header_user_info.current a:before {
         display: none; } }
+    @media (max-width: 767px) {
+      #header-login .header_user_info.current a:before {
+        display: inline-block; } }
   #header-login .header_user_info.current a:hover, #header-login .header_user_info.current a.active {
     color: #262626; }
   #header-login .logout {
@@ -47,7 +49,7 @@
     #header-login-content {
       right: auto;
       left: 0;
-      top: 36px; } }
+      top: 31px; } }
   #header-login-content .form-control {
     padding: 3px 12px 4px;
     height: 27px;

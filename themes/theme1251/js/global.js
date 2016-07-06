@@ -86,6 +86,12 @@ $(document).ready(function(){
 			next     : '<a title="' + FancyboxI18nNext + '" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
 			prev     : '<a title="' + FancyboxI18nPrev + '" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
 		});
+
+	$(document).on('click', '.btn-menu', function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).next('.toogle_content1').slideToggle("slow");
+	});
 });
 
 function highdpiInit()
