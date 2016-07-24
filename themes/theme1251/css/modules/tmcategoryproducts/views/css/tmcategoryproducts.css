@@ -97,7 +97,7 @@
       transition: all 0.3s ease;
       color: #d5d5d6; }
     .category-block .bx-wrapper .bx-controls-direction a:hover:before {
-      color: #00ade5; }
+      color: #000; }
     .category-block .bx-wrapper .bx-controls-direction a.disabled:hover:before {
       color: #d5d5d6; }
   @media (max-width: 767px) {
