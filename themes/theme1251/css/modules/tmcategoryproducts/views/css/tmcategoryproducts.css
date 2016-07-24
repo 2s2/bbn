@@ -1,0 +1,116 @@
+.category-block {
+  padding-top: 30px;
+  margin-bottom: 30px; }
+  .category-block .title_block:after {
+    display: none; }
+  .category-block .title_block {
+    margin: 0;
+    padding-right: 100px; }
+
+.category-block ul.product_list.grid li {
+  clear: none !important;
+  border: none; }
+  .category-block ul.product_list.grid li .product-container {
+    border: none; }
+
+.category-block {
+  position: relative; }
+  .category-block ul.product_list {
+    margin: 0; }
+  .category-block .bx-wrapper {
+    position: relative;
+    margin: 0 auto !important; }
+  .category-block .bx-wrapper .bx-viewport {
+    position: relative;
+    overflow: hidden;
+    padding-right: 1px; }
+  .category-block .bx-pager .bx-pager-item {
+    float: left;
+    text-align: center;
+    margin-right: 3px; }
+  .category-block .bx-pager .bx-pager-item a {
+    display: block;
+    width: 20px;
+    height: 20px; }
+  .category-block .bx-controls-auto .bx-controls-auto-item {
+    float: left;
+    margin-right: 3px;
+    text-align: center;
+    display: none; }
+  .category-block .bx-controls-auto .bx-controls-auto-item a {
+    display: block;
+    width: 20px;
+    height: 20px; }
+  .category-block .bx-controls-auto .bx-controls-auto-item a.bx-start:before {
+    content: '\f04b';
+    font-family: "FontAwesome"; }
+  .category-block .bx-controls-auto .bx-controls-auto-item a.bx-stop:before {
+    content: '\f04c';
+    font-family: "FontAwesome"; }
+  .category-block .bx-controls-direction {
+    position: absolute;
+    overflow: hidden;
+    top: -46px;
+    right: 22px; }
+    @media (max-width: 991px) {
+      .category-block .bx-controls-direction {
+        right: -27px;
+        top: -40px; } }
+    @media (max-width: 767px) {
+      .category-block .bx-controls-direction {
+        right: 0;
+        width: 100%;
+        top: 50%;
+        margin-top: -17px;
+        overflow: inherit; } }
+  .category-block .bx-wrapper .bx-controls-direction a {
+    outline: 0;
+    text-indent: -9999px;
+    width: 34px;
+    height: 34px;
+    z-index: 100;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0;
+    text-align: center;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    display: block; }
+    .category-block .bx-wrapper .bx-controls-direction a:before {
+      display: block;
+      text-indent: 0;
+      z-index: 1;
+      font-size: 14px;
+      line-height: 34px;
+      font-family: "FontAwesome";
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      color: #d5d5d6; }
+    .category-block .bx-wrapper .bx-controls-direction a:hover:before {
+      color: #00ade5; }
+    .category-block .bx-wrapper .bx-controls-direction a.disabled:hover:before {
+      color: #d5d5d6; }
+  @media (max-width: 767px) {
+    .category-block .bx-controls-direction a.bx-prev {
+      margin: 0 0 0 -39px;
+      float: left; } }
+  .category-block .bx-controls-direction a.bx-prev:before {
+    content: "\f060"; }
+  .category-block .bx-controls-direction a.bx-next {
+    margin-left: 8px; }
+    @media (max-width: 767px) {
+      .category-block .bx-controls-direction a.bx-next {
+        margin: 0 -39px 0 0;
+        float: right; } }
+  .category-block .bx-controls-direction a.bx-next:before {
+    content: "\f061"; }
