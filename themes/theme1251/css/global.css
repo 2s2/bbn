@@ -9155,7 +9155,7 @@ p.payment_module {
     p.payment_module a.bankwire:before {
       content: "\f09d"; }
     p.payment_module a.cash:before {
-      content: "\f044"; }
+      content: "\f0d6"; }
     p.payment_module a.cheque:after,
     p.payment_module a.bankwire:after,
     p.payment_module a.cash:after {
@@ -10167,3 +10167,7 @@ div.star.star_hover:after {
   display: inline-block;
   font-size: 15px;
   line-height: 15px; }
+
+  #slider_row +.tab-content {
+  display:none;
+}
