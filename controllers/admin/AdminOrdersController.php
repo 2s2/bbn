@@ -51,6 +51,7 @@ class AdminOrdersControllerCore extends AdminController
         $this->className = 'Order';
         $this->lang = false;
         $this->addRowAction('view');
+        $this->addRowAction('delete');
         $this->explicitSelect = true;
         $this->allow_export = true;
         $this->deleted = false;
@@ -190,7 +191,8 @@ class AdminOrdersControllerCore extends AdminController
         }
 
         $this->bulk_actions = array(
-            'updateOrderStatus' => array('text' => $this->l('Change Order Status'), 'icon' => 'icon-refresh')
+            'updateOrderStatus' => array('text' => $this->l('Change Order Status'), 'icon' => 'icon-refresh'),
+            'delete' => array( 'text' => $this->l('Delete selected'), 'confirm' => $this->l('Delete selected items?'), 'icon' => 'icon-trash' )
         );
 
         parent::__construct();
