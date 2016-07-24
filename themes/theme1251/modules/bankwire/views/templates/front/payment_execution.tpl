@@ -32,27 +32,6 @@
                 {/if}
             </p>
             <p>
-                -
-                {if $currencies|@count > 1}
-                    {l s='We allow several currencies to be sent via bank wire.' mod='bankwire'}
-                    <div class="form-group">
-                        <label>{l s='Choose one of the following:' mod='bankwire'}</label>
-                        <select id="currency_payement" class="form-control" name="currency_payement">
-                            {foreach from=$currencies item=currency}
-                                <option value="{$currency.id_currency}" {if $currency.id_currency == $cust_currency}selected="selected"{/if}>
-                                    {$currency.name}
-                                </option>
-                            {/foreach}
-                        </select>
-                    </div>
-                {else}
-                    {l s='We allow the following currency to be sent via bank wire:' mod='bankwire'}&nbsp;<b>{$currencies.0.name}</b>
-                    <input type="hidden" name="currency_payement" value="{$currencies.0.id_currency}" />
-                {/if}
-            </p>
-            <p>
-                - {l s='Bank wire account information will be displayed on the next page.' mod='bankwire'}
-                <br />
                 - {l s='Please confirm your order by clicking "I confirm my order".' mod='bankwire'}
             </p>
         </div><!-- .cheque-box -->
