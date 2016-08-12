@@ -23,7 +23,8 @@
       color: black; }
 
 #sdsblogCategory {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: none; }
   #sdsblogCategory .imageFeatured {
     float: left;
     margin: 0 20px 10px 0; }
@@ -66,9 +67,14 @@ a.read-more {
   display: block;
   margin-bottom: 30px; }
   #sdsblogArticle .post-image img {
-    width: 100%; }
+    max-width: 100%; }
 #sdsblogArticle .sdsarticle-des {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000; }
+#sdsblogArticle .sdsarticle-des a {
+  text-decoration: underline; }
 #sdsblogArticle .sdstags-update {
   margin-bottom: 30px; }
 #sdsblogArticle .block-addthis {
